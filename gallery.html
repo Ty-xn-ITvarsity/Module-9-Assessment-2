@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FoodieFanatix</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="index.html" class="navbar-brand">Claire's FoodieFanatix</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-4">
+      <h1 class="mb-2 text-center">Food Gallery</h1>
+      <p class="text-center text-muted mb-4">A few signature bites from Claire's kitchen.</p>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/header 1 chicken tandoori.jpg" class="card-img-top img-fluid" alt="Chicken tandoori">
+            <div class="card-body text-center">
+              <h5 class="card-title">Fire Kissed Tandoori</h5>
+              <p class="card-text">Smoky, spiced and full of bold flavor.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Fire Kissed Tandoori"
+                data-image="img/header 1 chicken tandoori.jpg"
+                data-description="A bold chicken dish marinated in warm spices and roasted until beautifully charred. It is rich, smoky and perfect for guests who enjoy strong flavor."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/header fish.png" class="card-img-top img-fluid" alt="Fish dish">
+            <div class="card-body text-center">
+              <h5 class="card-title">Ocean Whisper Fillet</h5>
+              <p class="card-text">A delicate seafood favorite with a fresh finish.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Ocean Whisper Fillet"
+                data-image="img/header fish.png"
+                data-description="A tender fish fillet with a light, clean taste and a refined finish. Ideal for a simple but elegant seafood plate."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/header  3 lamb and mutton.jpg" class="card-img-top img-fluid" alt="Lamb and mutton dish">
+            <div class="card-body text-center">
+              <h5 class="card-title">Savanna Spice Lamb</h5>
+              <p class="card-text">Rich, hearty and slow-cooked to perfection.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Savanna Spice Lamb"
+                data-image="img/header  3 lamb and mutton.jpg"
+                data-description="A slow-cooked lamb dish with deep spice, warmth and a comforting finish. Made for hearty appetites and rich dinner service."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/header 4 Rack of Lamb.png" class="card-img-top img-fluid" alt="Rack of lamb">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Crown Rack</h5>
+              <p class="card-text">Elegant, juicy and made for special moments.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Golden Crown Rack"
+                data-image="img/header 4 Rack of Lamb.png"
+                data-description="A refined rack of lamb with a tender bite and rich flavor. Designed to feel luxurious and memorable."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/header 4 chiken kebab.png" class="card-img-top img-fluid" alt="Chicken kebab">
+            <div class="card-body text-center">
+              <h5 class="card-title">Street Flame Kebabs</h5>
+              <p class="card-text">Tender bites packed with chargrilled goodness.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Street Flame Kebabs"
+                data-image="img/header 4 chiken kebab.png"
+                data-description="Juicy skewered chicken with a smoky outside and a tender center. Inspired by bold street food flavors."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/salmon.webp" class="card-img-top img-fluid" alt="Salmon dish">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sunset Salmon</h5>
+              <p class="card-text">Silky, vibrant and beautifully balanced.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Sunset Salmon"
+                data-image="img/salmon.webp"
+                data-description="A smooth salmon dish with rich color, delicate texture and a clean finish. A polished choice for a light main course."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/breakfast 1.jpg" class="card-img-top img-fluid" alt="Breakfast dish 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Morning Bliss Plate</h5>
+              <p class="card-text">A cheerful breakfast to start the day right.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Morning Bliss Plate"
+                data-image="img/breakfast 1.jpg"
+                data-description="A bright breakfast plate with warm comfort and a fresh morning feel. Made to start the day with energy and ease."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/breakfast 2.jpg" class="card-img-top img-fluid" alt="Breakfast dish 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sunrise Comfort Bowl</h5>
+              <p class="card-text">Warm, filling and made with home-style care.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Sunrise Comfort Bowl"
+                data-image="img/breakfast 2.jpg"
+                data-description="A warm bowl built around comfort, soft textures and satisfying flavor. Ideal for a calm and hearty breakfast."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/breakfast 3.jpg" class="card-img-top img-fluid" alt="Breakfast dish 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Breakfast Bloom</h5>
+              <p class="card-text">Fresh flavors and a bright morning touch.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Breakfast Bloom"
+                data-image="img/breakfast 3.jpg"
+                data-description="A colorful breakfast dish with a lively look and gentle flavor profile. A cheerful plate for lighter mornings."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tea.jpg" class="card-img-top img-fluid" alt="Tea">
+            <div class="card-body text-center">
+              <h5 class="card-title">Garden Calm Tea</h5>
+              <p class="card-text">A soothing cup for slow and peaceful moments.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Garden Calm Tea"
+                data-image="img/tea.jpg"
+                data-description="A relaxing tea blend with a soft aroma and gentle finish. Best for quiet moments, breaks and light pairings."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/coffe 1.jpg" class="card-img-top img-fluid" alt="Coffee 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Velvet Roast</h5>
+              <p class="card-text">Smooth coffee with deep, comforting notes.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Velvet Roast"
+                data-image="img/coffe 1.jpg"
+                data-description="A balanced roast with warmth, aroma and a smooth finish. A dependable café-style favorite for any time of day."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/coffe 2.jpg" class="card-img-top img-fluid" alt="Coffee 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Midday Mocha Mood</h5>
+              <p class="card-text">A rich pick-me-up with café charm.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Midday Mocha Mood"
+                data-image="img/coffe 2.jpg"
+                data-description="A richer coffee moment with mellow sweetness and depth. Great for a midday pause or after-meal drink."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/smoothi.jpeg" class="card-img-top img-fluid" alt="Smoothie">
+            <div class="card-body text-center">
+              <h5 class="card-title">Berry Breeze Smoothie</h5>
+              <p class="card-text">Cool, fruity and refreshingly bright.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Berry Breeze Smoothie"
+                data-image="img/smoothi.jpeg"
+                data-description="A chilled fruit smoothie with a lively burst of sweetness and freshness. Ideal for warm afternoons and light refreshment."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/meal 1.jpg" class="card-img-top img-fluid" alt="Meal 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Homestead Feast</h5>
+              <p class="card-text">A generous plate with classic comfort.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Homestead Feast"
+                data-image="img/meal 1.jpg"
+                data-description="A filling plate inspired by family meals, generous portions and familiar flavor. Built around comfort and warmth."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/meal 2.jpg" class="card-img-top img-fluid" alt="Meal 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chef's Heartbeat</h5>
+              <p class="card-text">Simple ingredients turned into something special.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Chef's Heartbeat"
+                data-image="img/meal 2.jpg"
+                data-description="A dish centered on simple ingredients prepared with care. Honest, balanced and memorable without being heavy."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/meal 3.jpg" class="card-img-top img-fluid" alt="Meal 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Harvest Table Special</h5>
+              <p class="card-text">Wholesome, colorful and deeply satisfying.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Harvest Table Special"
+                data-image="img/meal 3.jpg"
+                data-description="A wholesome meal with color, balance and strong home-style appeal. Designed to satisfy while still feeling fresh."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/meal 4.jpg" class="card-img-top img-fluid" alt="Meal 4">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Plate Delight</h5>
+              <p class="card-text">A warm favorite with rich home-cooked flavor.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Golden Plate Delight"
+                data-image="img/meal 4.jpg"
+                data-description="A comforting meal with rich flavor and a welcoming finish. A reliable favorite for guests wanting a classic plate."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/dessert 1.jpg" class="card-img-top img-fluid" alt="Dessert 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sweet Cloud Treat</h5>
+              <p class="card-text">Soft, sweet and impossible to resist.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Sweet Cloud Treat"
+                data-image="img/dessert 1.jpg"
+                data-description="A soft dessert with a gentle sweetness and a delicate finish. Perfect as a light ending to a full meal."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/desssert 2.jpg" class="card-img-top img-fluid" alt="Dessert 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sugar Bloom</h5>
+              <p class="card-text">A cheerful dessert with a playful finish.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Sugar Bloom"
+                data-image="img/desssert 2.jpg"
+                data-description="A bright, playful dessert with a sweet finish and eye-catching charm. Lighthearted and easy to enjoy."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/dessert 5.jpg" class="card-img-top img-fluid" alt="Dessert 5">
+            <div class="card-body text-center">
+              <h5 class="card-title">Finale of Honey</h5>
+              <p class="card-text">A sweet ending to a memorable meal.</p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dishModal"
+                data-title="Finale of Honey"
+                data-image="img/dessert 5.jpg"
+                data-description="A golden dessert with a warm sweetness and elegant finish. Created to close the meal on a memorable note."
+              >
+                View Dish
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <footer class="footer-section bg-dark text-white py-3">
+      <div class="container">
+        <p class="float-right"><a href="#" class="text-white">Back to top</a></p>
+        <p class="mb-0">&copy; 2026 Tino. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal fade" id="dishModal" tabindex="-1" role="dialog" aria-labelledby="dishModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="dishModalLabel">Dish Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="dishModalImage" src="" class="img-fluid rounded mb-3" alt="Dish image">
+          <p id="dishModalText" class="mb-0"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('#dishModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var title = button.data('title');
+      var image = button.data('image');
+      var description = button.data('description');
+
+      var modal = $(this);
+      modal.find('.modal-title').text(title);
+      modal.find('#dishModalImage').attr('src', image);
+      modal.find('#dishModalImage').attr('alt', title);
+      modal.find('#dishModalText').text(description);
+    });
+  </script>
+</body>
+</html>

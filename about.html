@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FoodieFanatix</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="index.html" class="navbar-brand">Claire's FoodieFanatix</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link active">About</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+        </div>
+
+        <button id="darkModeToggle" class="btn btn-outline-light btn-sm ml-lg-3 mt-2 mt-lg-0" type="button">
+          Dark Mode
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="page" class="container py-4">
+      <div id="content">
+        <h1>About Claire's FoodieFanatix</h1>
+
+        <div class="my-3">
+          <img src="img/Claire's FoodieFanatix.png" width="250" alt="Claire's FoodieFanatix logo" class="img-fluid">
+        </div>
+
+        <p>Proudly providing marvelous home-style meals.</p>
+        <p>I cook delightful dishes from my kitchen in Johannesburg.</p>
+        <p>Meals are available in my stores and through deliveries around Johannesburg.</p>
+        <p>I am passionate about both eating delicious food and serving the people I love.</p>
+        <p>My goal is to make world-class food while building a thriving business.</p>
+        <p>I want to build a business that makes a difference in my community and in the lives of my loved ones.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <footer class="footer-section bg-dark text-white py-3">
+      <div class="container">
+        <p class="float-right"><a href="#" class="text-white">Back to top</a></p>
+        <p class="mb-0">&copy; 2026 Tino. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    const toggleButton = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+      body.classList.add("dark-mode");
+      toggleButton.textContent = "Light Mode";
+    }
+
+    toggleButton.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+        toggleButton.textContent = "Light Mode";
+      } else {
+        localStorage.setItem("darkMode", "disabled");
+        toggleButton.textContent = "Dark Mode";
+      }
+    });
+  </script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>

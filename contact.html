@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FoodieFanatix</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="index.html" class="navbar-brand">Claire's FoodieFanatix</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="contact.html" class="nav-item nav-link active">Contact</a>
+          <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+        </div>
+
+        <button id="darkModeToggle" class="btn btn-outline-light btn-sm ml-lg-3 mt-2 mt-lg-0" type="button">
+          Dark Mode
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="page" class="container py-4">
+      <div id="content">
+        <h1>Get In Touch With Claire</h1>
+
+        <div class="my-3">
+          <img src="img/Claire's FoodieFanatix.png" width="250" alt="Claire's FoodieFanatix logo" class="img-fluid">
+        </div>
+
+        <ul class="mb-4">
+          <li>Contact Number: +27 (11) 234 5678</li>
+          <li>Email Address: claire@foodiefanatix.co.za</li>
+          <li>Business Hours: Monday-Friday 09h00-18h00</li>
+          <li>Saturday-Sunday 09h00-14h00</li>
+        </ul>
+
+        <h2 class="h5 mb-3"><b>Kindly Place an Order by Filling in the Form Below</b></h2>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" class="form-control" id="surname" placeholder="Surname">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="cellNumber">Cell Number</label>
+            <input type="tel" class="form-control" id="cellNumber" placeholder="Cell number">
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea class="form-control" id="comments" rows="4" placeholder="Comments"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <footer class="footer-section bg-dark text-white py-3">
+      <div class="container">
+        <p class="float-right"><a href="#" class="text-white">Back to top</a></p>
+        <p class="mb-0">&copy; 2026 Tino. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    const toggleButton = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+      body.classList.add("dark-mode");
+      toggleButton.textContent = "Light Mode";
+    }
+
+    toggleButton.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+        toggleButton.textContent = "Light Mode";
+      } else {
+        localStorage.setItem("darkMode", "disabled");
+        toggleButton.textContent = "Dark Mode";
+      }
+    });
+  </script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>
