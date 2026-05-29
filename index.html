@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
+<body id="top">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a href="index.html" class="navbar-brand">Claire's FoodieFanatix</a>
@@ -81,6 +81,15 @@
           </div>
         </div>
       </div>
+
+      <a class="carousel-control-prev" href="#carouselImg" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselImg" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
     <div class="container team">
@@ -93,7 +102,7 @@
             chevre. Vermont Creamery and Laura Chenel are varieties you're likely to find. If you've got access to local
             options, use them for this quick breakfast recipe. Aside from the goat cheese, eggs and herbs complete the dish.
           </p>
-          <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>
+          <p><a href="#featured-wraps" class="btn btn-secondary" role="button">View details</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -104,7 +113,7 @@
             pasta recipe calls for just five ingredients but is loaded with fresh flavors. By using grape tomatoes,
             prewashed spinach and prepared pesto, dinner comes together quickly.
           </p>
-          <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>
+          <p><a href="#featured-quesadillas" class="btn btn-secondary" role="button">View details</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -115,14 +124,14 @@
             tomatoes does double duty for this healthy dinner recipe. The flavorful oil they're packed in is used to
             sauté the chicken, and the tomatoes go into the cream sauce.
           </p>
-          <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>
+          <p><a href="#featured-linguine" class="btn btn-secondary" role="button">View details</a></p>
         </div>
       </div>
 
       <hr class="section-divider">
 
       <div class="container">
-        <div class="row">
+        <div class="row" id="featured-wraps">
           <div class="col-md-7">
             <h2 class="feature-heading">First Featured Meal. <span class="text-muted">Garden Rainbow Wraps</span></h2>
             <p class="lead">
@@ -138,7 +147,7 @@
 
         <hr class="section-divider">
 
-        <div class="row">
+        <div class="row" id="featured-quesadillas">
           <div class="col-md-7 order-md-2">
             <h2 class="feature-heading">Second Featured Meal. <span class="text-muted">Sizzling Pepper Quesadillas</span></h2>
             <p class="lead">
@@ -153,7 +162,7 @@
 
         <hr class="section-divider">
 
-        <div class="row">
+        <div class="row" id="featured-linguine">
           <div class="col-md-7">
             <h2 class="feature-heading">Third Featured Meal. <span class="text-muted">Garlic Butter Shrimp Linguine</span></h2>
             <p class="lead">
@@ -173,7 +182,7 @@
 
     <footer class="footer-section bg-dark text-white py-3">
       <div class="container">
-        <p class="float-right"><a href="#" class="text-white">Back to top</a></p>
+        <p class="float-right"><a href="#top" class="text-white">Back to top</a></p>
         <p class="mb-0">&copy; 2026 Tino. All rights reserved.</p>
       </div>
     </footer>
