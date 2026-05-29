@@ -40,7 +40,14 @@
   </header>
 
   <main>
-    <div id="carouselImg" class="carousel slide carouselImg" data-ride="carousel">
+    <div
+      id="carouselImg"
+      class="carousel slide carouselImg"
+      data-ride="carousel"
+      data-interval="3000"
+      data-pause="false"
+      data-wrap="true"
+    >
       <ol class="carousel-indicators">
         <li data-target="#carouselImg" data-slide-to="0" class="active"></li>
         <li data-target="#carouselImg" data-slide-to="1"></li>
@@ -211,6 +218,12 @@
         localStorage.setItem("darkMode", "disabled");
         toggleButton.textContent = "Dark Mode";
       }
+    });
+
+    $('#carouselImg').carousel({
+      interval: 3000,
+      pause: false,
+      wrap: true
     });
   </script>
 </body>
